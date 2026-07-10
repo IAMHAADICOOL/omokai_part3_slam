@@ -1,0 +1,38 @@
+# EKF localisation parameters — localization_final
+# Q = diag(sigma_L^2, sigma_R^2) process noise; P0 = diag(sigma_x^2, sigma_y^2, sigma_theta^2) initial uncertainty
+
+task2_ekf_localization:
+  ros__parameters:
+
+    # Frame names (must match simulation)
+    odom_frame:  "world_enu"
+    base_frame:  "turtlebot/base_footprint"
+
+    # Joint names (must match Stonefish URDF)
+    wheel_left_joint_name:  "turtlebot/wheel_left_joint"
+    wheel_right_joint_name: "turtlebot/wheel_right_joint"
+
+    # Robot geometry
+    wheel_radius:        0.035   # [m]
+    wheel_base_distance: 0.230   # [m]
+
+    # wheel velocity noise std-dev [rad/s] — Q matrix diagonal entries
+    wheel_vel_noise_left:  0.05
+    wheel_vel_noise_right: 0.05
+
+    # initial pose uncertainty std-dev — P0 diagonal entries
+    init_sigma_x:     0.1   # [m]
+    init_sigma_y:     0.1   # [m]
+    init_sigma_theta: 0.1   # [rad]
+
+task2_dead_reckoning:
+  ros__parameters:
+
+    odom_frame:  "world_enu"
+    base_frame:  "turtlebot/base_footprint"
+
+    wheel_left_joint_name:  "turtlebot/wheel_left_joint"
+    wheel_right_joint_name: "turtlebot/wheel_right_joint"
+
+    wheel_radius:        0.035
+    wheel_base_distance: 0.230
