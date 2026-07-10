@@ -157,8 +157,8 @@ Why each one is there — these are not obvious, and each caused a real failure:
 ## 5. Build the workspace
 
 ```bash
-git clone <this-repo-url>
-cd <repo-folder>
+git clone https://github.com/IAMHAADICOOL/omokai_part3_slam.git slam
+cd slam
 source /opt/ros/jazzy/setup.bash
 colcon build --symlink-install
 source install/setup.bash
