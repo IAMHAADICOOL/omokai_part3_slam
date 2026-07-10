@@ -14,8 +14,8 @@ LiDAR scan → RANSAC line features → data association → factor graph → iS
 This is **Part 3** of the Omokai take-home. Parts 1, 2 and 4 (the LLM mission
 pipeline, multi-robot formations, and vision follow) live in the main repository:
 
-**→ [Omokai — Parts 1, 2, 4](https://github.com/IAMHAADICOOL/omokai_part2_multi_robot_submission)**
-*(replace with the real URL)*
+**→ [Omokai — Parts 1, 2, 4](https://github.com/IAMHAADICOOL/omokai_part4_ai_robot_following_submission/tree/main)**
+
 
 ### Why it's a separate repository
 
